@@ -99,6 +99,7 @@ int main(int argc, char **argv)
 					}
 					else {
 						countdownReached = 1;
+						printf("Time is up!\n");
 					}
 				}
 			}
