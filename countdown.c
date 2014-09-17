@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <unistd.h>
 
 #define SECONDS_IN_DAY (60*60*24)
 #define SECONDS_IN_HOUR (60*60)
@@ -95,6 +96,9 @@ int main(int argc, char **argv)
 					hours = 23;
 					if( days > 0) {
 						days--;
+					}
+					else {
+						countdownReached = 1;
 					}
 				}
 			}
